@@ -8,7 +8,7 @@ namespace BakeryProject.DAL.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=Abdullah;initial Catalog=Tasarim;integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\local;initial Catalog=Tasarim;integrated Security=true");
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
