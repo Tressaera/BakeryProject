@@ -1,0 +1,20 @@
+﻿@model List<BakeryProject.CQRSPattern.Results.FiveProduct.GetFiveProductQueryResult>
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="icons-banner-botom">
+	<div class="container">
+		<ul class="list-unstyled my-4">
+			@foreach (var item in Model)
+			{
+				<li class="icons-mkw3ls">
+					<p class="mb-2">@item.Name</p>
+					<img src="@item.Image" class="img-fluid" alt="">
+				</li>
+
+			}
+		
+		</ul>
+	</div>
+</div>
